@@ -31,11 +31,21 @@
 .site-main .site-banner .container .row .banner-image {
   padding: 3rem 2rem;
 }
-.site-main .site-banner .container .row .site-title .headings{
-    padding: auto
+
+.site-main .site-banner .container .row .site-title {
+  text-align: center;
+  padding-top: 1rem;
 }
-@media screen {
-    
+@media screen and (min-width: 992px) {
+  .site-main .site-banner .container .row .site-title {
+    text-align: center;
+    padding-top: 10rem;
+  }
+}
+
+.site-main .site-banner .container .row .site-title .site-buttons {
+  align-items: center;
+  justify-content: center;
 }
 .site-main .site-banner .container .row .site-title h1 {
   font-size: 4rem;
@@ -50,5 +60,47 @@
   font-weight: 600;
   font-size: 1.3rem;
   text-align: centre;
+}
+/* Buttons */
+.button{
+    padding: 0.6rem 1.5rem; 
+    font-family: var(--roboto);
+    font-weight: bold;
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 0.25rem;
+}
+.button.primary-button{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: var(--green-light);
+    transition: background 0.3s ease;
+    box-shadow: var(--box-shadow);
+}
+.button.primary-button:hover{
+    background: var(--green-dark);
+    background-clip: padding-box;
+    color: var(--dark-color);
+}
+.button.button.primary-button::after, .button.secondary-button::after{
+    position: absolute;
+    top: -2px; left: -2px;
+    bottom: -2px; right: -2px;
+    background: var(--gradient-color);
+    content: '';
+    z-index: -1;
+    border-radius: 0.25rem;
+}
+.button.secondary-button{
+    margin-left: 1rem;
+    background: var(--green-dark);
+    background-clip: padding-box;
+    transition: background 0.3s ease;
+}
+.button.secondary-button:hover{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: var(--green-light);
+    box-shadow: var(--box-shadow);
 }
 /* End Banner Area */
