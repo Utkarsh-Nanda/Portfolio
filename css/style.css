@@ -1,0 +1,54 @@
+/* Import fonts from other file */
+@import url(./fonts.css);
+
+/* Import css variables from other file */
+@import url(./partials/variables.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&family=Lato&family=Sacramento&display=swap");
+
+/* start navigation menu */
+
+.header_area .main-menu .nav-item .nav-link {
+  color: var(--green-dark);
+  font-family: var(--navbar-font);
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0.2rem 1.5rem 0.2rem 1.5rem;
+}
+.header_area .main-menu .nav-item .active {
+  color: var(--green-light);
+}
+.header_area .main-menu .nav-item a:hover {
+  color: var(--green-light);
+}
+.navbar {
+  background-color: var(--dark-color);
+  border-radius: 0% 0% 2rem 2rem;
+}
+/* end navigation menu */
+
+/* Start Banner Area */
+.site-main .site-banner .container .row .banner-image {
+  padding: 3rem 2rem;
+}
+.site-main .site-banner .container .row .site-title .headings{
+    padding: auto
+}
+@media screen {
+    
+}
+.site-main .site-banner .container .row .site-title h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--dark-color);
+  font-family: var(--roboto);
+  text-align: centre;
+  padding-top: 3rem;
+}
+.site-main .site-banner .container .row .site-title h4 {
+  font-family: var(--roboto);
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-align: centre;
+}
+/* End Banner Area */

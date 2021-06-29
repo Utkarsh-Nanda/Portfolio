@@ -1,0 +1,22 @@
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+/* Css Variables */
+:root{
+    /* Colors */
+--dark-color: #191b1d;
+--dark-color-light: #393e46;
+--mid-color: #29a19c;
+--green-dark:  #3caa7a;
+--green-light: #a3f7bf;
+
+/* Fonts */
+--roboto: 'Roboto', cursive;
+--navbar-font: 'Big Shoulders Stencil Display', cursive;
+--basic-font: 'Lato', sans-serif;
+--stylish-font: 'Sacramento', cursive;
+}
