@@ -14,15 +14,19 @@ html, body{
 --green-dark:  #3caa7a;
 --green-light: #a3f7bf;
 --gradient-color: linear-gradient(147deg, #22be66 20%, #000000 74%);
-
-
 --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+/* --box-shadow2: 0 20px 50px rgba(19, 103, 29, 0.7); */
+--box-shadow2: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+--image-shadow: #3caa7a 0px 20px 30px -10px;
+
 
 /* Fonts */
---roboto: 'Roboto', cursive;
+--roboto: 'Roboto', sans-serif;
 --navbar-font: 'Big Shoulders Stencil Display', cursive;
 --basic-font: 'Lato', sans-serif;
---stylish-font: 'Sacramento', cursive;
+--stylish-font: 'Lobster', cursive;
+--heading-font: 'Jomhuria', cursive;
+
 
 /* Screen Sizes */
 --xs: 576px;
