@@ -6,6 +6,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&family=Lato&family=Sacramento&display=swap");
 
+/* @media screen and (min-width: 992px) {} */
 /* start navigation menu */
 
 .header_area .main-menu .nav-item .nav-link {
@@ -62,45 +63,71 @@
   text-align: centre;
 }
 /* Buttons */
-.button{
-    padding: 0.6rem 1.5rem; 
-    font-family: var(--roboto);
-    font-weight: bold;
-    position: relative;
-    border: 2px solid transparent;
-    border-radius: 0.25rem;
+.button {
+  padding: 0.3rem 0.8rem;
+  font-family: var(--roboto);
+  font-weight: bold;
+  position: relative;
+  border: 2px solid transparent;
+  border-radius: 0.25rem;
 }
-.button.primary-button{
-    background: var(--gradient-color);
-    background-clip: padding-box;
-    color: var(--green-light);
-    transition: background 0.3s ease;
-    box-shadow: var(--box-shadow);
+.button.primary-button {
+  background: var(--gradient-color);
+  background-clip: padding-box;
+  color: var(--green-light);
+  transition: background 0.3s ease;
+  box-shadow: var(--box-shadow);
 }
-.button.primary-button:hover{
-    background: var(--green-dark);
-    background-clip: padding-box;
-    color: var(--dark-color);
+.button.primary-button:hover {
+  background: var(--green-dark);
+  background-clip: padding-box;
+  color: var(--dark-color);
 }
-.button.button.primary-button::after, .button.secondary-button::after{
-    position: absolute;
-    top: -2px; left: -2px;
-    bottom: -2px; right: -2px;
-    background: var(--gradient-color);
-    content: '';
-    z-index: -1;
-    border-radius: 0.25rem;
+.button.button.primary-button::after,
+.button.secondary-button::after {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  background: var(--gradient-color);
+  content: "";
+  z-index: -1;
+  border-radius: 0.25rem;
 }
-.button.secondary-button{
-    margin-left: 1rem;
-    background: var(--green-dark);
-    background-clip: padding-box;
-    transition: background 0.3s ease;
+.button.secondary-button {
+  margin-left: 1rem;
+  background: var(--green-dark);
+  background-clip: padding-box;
+  transition: background 0.3s ease;
 }
-.button.secondary-button:hover{
-    background: var(--gradient-color);
-    background-clip: padding-box;
-    color: var(--green-light);
-    box-shadow: var(--box-shadow);
+.button.secondary-button:hover {
+  background: var(--gradient-color);
+  background-clip: padding-box;
+  color: var(--green-light);
+  box-shadow: var(--box-shadow);
 }
 /* End Banner Area */
+
+/* Start About-Me Area */
+.about-area {
+  background-color: var(--dark-color);
+  padding: 4rem 2rem;
+}
+.about-heading{
+  margin-top: 4rem;
+}
+@media screen and (min-width: 992px) {
+  .about-area {
+    padding: 7rem 2rem;
+  }
+  .about-heading{
+    margin-top: 0rem;
+  }
+}
+
+.image-dp {
+  border-radius: 50%;
+  width: 50%;
+}
+/* End About-Me Area */
