@@ -46,4 +46,33 @@ $(document).ready(function () {
     }
   }
   navbarFixed();
+  // smooth scrolling
+  $(".navbar a").on("click", function (e) {
+    if (this.hash !== "") {
+      e.preventDefault();
+
+      const hash = this.hash;
+
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top - 30,
+        },
+        300
+      );
+    }
+  });
+  $(".site-banner .bottom-links a").on("click", function (e) {
+    if (this.hash !== "") {
+      e.preventDefault();
+
+      const hash = this.hash;
+
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top - 30,
+        },
+        300
+      );
+    }
+  });
 });

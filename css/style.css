@@ -67,7 +67,7 @@ body{
   z-index: 999;
   border-radius: 0% 0% 2.1rem 2.1rem;
   /* overflow-y: scroll;  */
-  scroll-behavior: smooth; 
+  /* scroll-behavior: smooth;  */
 }
 /* end navigation menu */
 
@@ -194,14 +194,14 @@ body{
   box-shadow: var(--box-shadow2);
   padding: 0.3rem 0.3rem;
   border-radius: 0.25rem;
-  transition-duration: 100ms;
+  transition-duration: 200ms;
   transition-property: all;
   transition-timing-function: ease-in;
 }
 .bottom-links:hover {
   color: var(--green-light);
-  border-radius: 0.65rem;
-  font-size: 0.87rem;
+  border-radius: 0.75rem;
+  /* font-size: 0.87rem; */
 }
 .professional-work{
   margin-bottom: 3rem;
@@ -360,7 +360,7 @@ body{
 .projects-title h3 {
   color: var(--green-dark);
   margin-bottom: 0rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 .projects-title p {
   color: var(--green-light);
